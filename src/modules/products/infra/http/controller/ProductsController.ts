@@ -11,6 +11,14 @@ export default class ProductsController {
 
     const product = await createProduct.execute({ name, price, quantity });
 
+    if (quantity !== 0) {
+      console.log(name);
+    }
+
+    if (quantity !== 0) {
+      console.log(name);
+    }
+
     return response.json(product);
   }
 }
